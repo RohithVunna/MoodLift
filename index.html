@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoodTrack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌤 MoodTrack</h1>
+
+    <div class="mood-buttons">
+        <button onclick="setMood('😊 Happy')">😊</button>
+        <button onclick="setMood('😐 Neutral')">😐</button>
+        <button onclick="setMood('😢 Sad')">😢</button>
+        <button onclick="setMood('😡 Angry')">😡</button>
+    </div>
+
+    <textarea id="note" placeholder="Write something about your day..."></textarea>
+    <button class="save-btn" onclick="saveMood()">Save Entry</button>
+
+    <h2>History</h2>
+    <div id="history"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
